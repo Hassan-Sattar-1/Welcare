@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 import logo from '../assets/logo.png';
 
+const getNavLinkClass = ({ isActive }) => (isActive ? 'nav-link active' : 'nav-link');
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -16,11 +18,12 @@ const Header = () => {
         {/* Desktop Navigation Wrapper */}
         <div className="desktop-nav-container">
           <nav className="nav-links desktop">
-            <NavLink to="/" className="nav-link" activeClassName="active" exact>Home</NavLink>
-            <NavLink to="/products" className="nav-link" activeClassName="active">Products</NavLink>
-            <NavLink to="/crops" className="nav-link" activeClassName="active">Crops</NavLink>
-            <NavLink to="/quality-control" className="nav-link" activeClassName="active">Quality Control</NavLink>
-            <a href="/#contact" className="nav-link">Contact Us</a>
+            <NavLink to="/" className={getNavLinkClass} end>Home</NavLink>
+            <NavLink to="/products" className={getNavLinkClass}>Products</NavLink>
+            <NavLink to="/crops" className={getNavLinkClass}>Crops</NavLink>
+            <NavLink to="/quality-control" className={getNavLinkClass}>Quality Control</NavLink>
+            <NavLink to="/about-us" className={getNavLinkClass}>About Us</NavLink>
+            <NavLink to="/contact-us" className={getNavLinkClass}>Contact Us</NavLink>
           </nav>
           <button className="store-button desktop">Online Store</button>
         </div>
@@ -28,11 +31,12 @@ const Header = () => {
         {/* Mobile-only container */}
         <div className={`mobile-menu-container ${menuOpen ? 'active' : ''}`}>
           <nav className="nav-links">
-            <NavLink to="/" className="nav-link" activeClassName="active" exact onClick={() => setMenuOpen(false)}>Home</NavLink>
-            <NavLink to="/products" className="nav-link" activeClassName="active" onClick={() => setMenuOpen(false)}>Products</NavLink>
-            <NavLink to="/crops" className="nav-link" activeClassName="active" onClick={() => setMenuOpen(false)}>Crops</NavLink>
-            <NavLink to="/quality-control" className="nav-link" activeClassName="active" onClick={() => setMenuOpen(false)}>Quality Control</NavLink>
-            <a href="/#contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact Us</a>
+            <NavLink to="/" className={getNavLinkClass} end onClick={() => setMenuOpen(false)}>Home</NavLink>
+            <NavLink to="/products" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>Products</NavLink>
+            <NavLink to="/crops" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>Crops</NavLink>
+            <NavLink to="/quality-control" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>Quality Control</NavLink>
+            <NavLink to="/about-us" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>About Us</NavLink>
+            <NavLink to="/contact-us" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>Contact Us</NavLink>
           </nav>
           <button className="store-button mobile">Online Store</button>
         </div>
