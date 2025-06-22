@@ -1,0 +1,167 @@
+.aboutus-hero-section {
+  position: relative;
+  min-height: 520px;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 40px 0;
+  z-index: 1;
+}
+
+/* Transparent dark overlay */
+.aboutus-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the 0.3 for more/less transparency */
+  z-index: -1;
+}
+
+
+.aboutus-content-wrapper {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-start;
+  gap: 40px;
+  background: rgba(255,255,255,0.0);
+  padding: 60px 0 0 0;
+}
+
+.aboutus-content-left {
+  flex: 2;
+  color: #222;
+}
+
+.page-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #24713b;
+  margin-bottom: 0.2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page-breadcrumb {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus-paragraph p {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus-content-right {
+  flex: 1.1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.aboutus-image-frame {
+  background: #fff;
+  border: 7px solid #EB802E;
+  border-radius: 24px;
+  padding: 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutus-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.aboutus-mission-vision-section {
+  background: #24713b;
+  padding: 40px 0 30px 0;
+}
+
+.aboutus-mission-vision-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+}
+
+.aboutus-vision, .aboutus-mission {
+  flex: 1;
+  color: #fff;
+}
+
+.aboutus-vision-title {
+  color: #EB802E;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus-mission-title {
+  color: #FFB800;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus-vision ul, .aboutus-mission ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutus-vision li, .aboutus-mission li {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.leaf {
+  color: #EB802E;
+  font-size: 1.2em;
+  margin-right: 10px;
+  line-height: 1.2;
+}
+
+@media (max-width: 900px) {
+  .aboutus-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .aboutus-content-right, .aboutus-content-left {
+    width: 100%;
+    justify-content: center;
+  }
+  .aboutus-image-frame {
+    width: 90vw;
+    max-width: 350px;
+    height: 220px;
+  }
+  .aboutus-mission-vision-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+} 

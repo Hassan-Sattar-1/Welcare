@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 // Assume images are in the assets folder
@@ -50,7 +51,9 @@ const Hero = () => {
           <div className="welcome-left">
             <h2>Welcome to <br /> <span className="green-text">Welcare Chemical</span><br /> <span className="green-text">Corporation</span></h2>
             <p className="subtitle">Committed to Delivering Excellence in Every Drop, Every Field, Every Season.</p>
-            <button className="about-us-button">About Us</button>
+            <Link to="/about-us">
+              <button className="about-us-button">About Us</button>
+            </Link>
           </div>
           <div className="welcome-right">
             <p><strong>Welcare Chemical Corporation</strong> is a leading name in Pakistan's agrochemical sector, dedicated to provide high-quality fertilizers and crop protection products. We focus on sustainable agriculture by sourcing innovative solutions from around the world and tailoring them to local needs. Every product in our portfolio is carefully evaluated to meet strict environmental and regulatory standards, ensuring both effectiveness and responsibility. At <strong>Welcare</strong>, we are committed to support farmers with reliable suggestions for better yields and a more sustainable future.</p>

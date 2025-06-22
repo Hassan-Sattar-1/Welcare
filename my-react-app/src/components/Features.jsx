@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Features.css';
 
 import summaryPic from '../assets/pic.jpeg';
@@ -25,14 +26,14 @@ const Features = () => {
             <div className="summary-icon">
               <img src={employeeIcon} alt="Employee icon" style={{ width: '50px', height: '50px' }} />
             </div>
-            <h3>800+</h3>
+            <h3>100+</h3>
             <p>Field Team</p>
           </div>
           <div className="summary-box">
             <div className="summary-icon">
               <img src={dealIcon} alt="Deal icon" style={{ width: '50px', height: '50px' }} />
             </div>
-            <h3>1000+</h3>
+            <h3>500+</h3>
             <p>Business Partners</p>
           </div>
           <div className="summary-image-container">
@@ -44,7 +45,7 @@ const Features = () => {
       {/* Our Strength Section */}
       <section className="feature-section">
         <div className="feature-content">
-          <div className="feature-image">
+          <div className="feature-image-orange">
             <img src={strengthPic} alt="Rozan and Nooran products" />
           </div>
           <div className="feature-text">
@@ -59,7 +60,7 @@ const Features = () => {
       {/* Our Assets Section */}
       <section className="feature-section-alt">
         <div className="feature-content reverse">
-          <div className="feature-image">
+          <div className="feature-image-green">
             <img src={assetsPic} alt="Care Up product" />
           </div>
           <div className="feature-text">
@@ -74,7 +75,7 @@ const Features = () => {
       {/* Our Expertise Section */}
       <section className="feature-section">
         <div className="feature-content">
-          <div className="feature-image">
+          <div className="feature-image-orange">
             <img src={expertisePic} alt="Care Push products" />
           </div>
           <div className="feature-text">
@@ -89,7 +90,7 @@ const Features = () => {
       {/* Our Commitment Section */}
       <section className="feature-section-alt">
         <div className="feature-content reverse">
-          <div className="feature-image">
+          <div className="feature-image-green">
             <img src={commitmentPic} alt="Bunjara product" />
           </div>
           <div className="feature-text">
@@ -104,10 +105,12 @@ const Features = () => {
       {/* Our Mission Section */}
       <section className="mission-section" style={{ backgroundImage: `url(${missionBg})` }}>
         <div className="mission-overlay">
-          <h2 className="feature-title-green">Our Mission</h2>
+          <h2 className="feature-title-orange">Our Mission</h2>
           <h3>Empowering Farmers. Enhancing Lives.</h3>
           <p>At Welcare Chemical Corporation, our dedicated technical field team works hand-in-hand with farmers to improve per-acre productivity and maximize their growth. We are committed to delivering innovative agricultural solutions that increase yield, add to the overall income and well-being of our farming community.</p>
-          <button className="feature-button-orange">About Us</button>
+          <Link to="/about-us">
+            <button className="feature-button-orange">About Us</button>
+          </Link>
         </div>
       </section>
 
@@ -116,37 +119,49 @@ const Features = () => {
         <h2 className="products-title">Our Products</h2>
         <div className="products-grid">
           {/* Large Card */}
-          <div className="product-card large-card">
-            <div className="product-image-container pink-bg">
-              <img src={microNutrientsPic} alt="Micro Nutrients" />
-            </div>
-            <div className="product-label">Micro Nutrients</div>
+          <div className="product-card-wrapper">
+            <Link to="/micro-nutrients">
+              <div className="product-card large-card">
+                <div className="product-image-container pink-bg">
+                  <img src={microNutrientsPic} alt="Micro Nutrients" />
+                </div>
+                <div className="product-label">Micro Nutrients</div>
+              </div>
+            </Link>
           </div>
           {/* Small Cards Grid */}
           <div className="products-subgrid">
-            <div className="product-card">
-              <div className="product-image-container red-bg">
-                <img src={granulesPic} alt="Granules" />
+            <div className="product-card-wrapper">
+              <div className="product-card">
+                <div className="product-image-container red-bg">
+                  <img src={granulesPic} alt="Granules" />
+                </div>
+                <div className="product-label">Granules</div>
               </div>
-              <div className="product-label">Granules</div>
             </div>
-            <div className="product-card">
-              <div className="product-image-container dark-blue-bg">
-                <img src={fungicidesPic} alt="Fungicides" />
+            <div className="product-card-wrapper">
+              <div className="product-card">
+                <div className="product-image-container dark-blue-bg">
+                  <img src={fungicidesPic} alt="Fungicides" />
+                </div>
+                <div className="product-label">Fungicides</div>
               </div>
-              <div className="product-label">Fungicides</div>
             </div>
-            <div className="product-card">
-              <div className="product-image-container purple-bg">
-                <img src={insecticidesPic} alt="Insecticides" />
+            <div className="product-card-wrapper">
+              <div className="product-card">
+                <div className="product-image-container purple-bg">
+                  <img src={insecticidesPic} alt="Insecticides" />
+                </div>
+                <div className="product-label">Insecticides</div>
               </div>
-              <div className="product-label">Insecticides</div>
             </div>
-            <div className="product-card">
-              <div className="product-image-container light-blue-bg">
-                <img src={herbicidesPic} alt="Herbicides" />
+            <div className="product-card-wrapper">
+              <div className="product-card">
+                <div className="product-image-container light-blue-bg">
+                  <img src={herbicidesPic} alt="Herbicides" />
+                </div>
+                <div className="product-label">Herbicides</div>
               </div>
-              <div className="product-label">Herbicides</div>
             </div>
           </div>
         </div>

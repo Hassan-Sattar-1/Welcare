@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 import logo from '../assets/logo.png';
 
@@ -8,18 +9,18 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="logo-container">
+        <Link to="/" className="logo-container">
           <img src={logo} alt="Welcare Chemical Corporation Logo" className="logo" />
-        </div>
+        </Link>
 
         {/* Desktop Navigation Wrapper */}
         <div className="desktop-nav-container">
           <nav className="nav-links desktop">
-            <a href="#home" className="nav-link active">Home</a>
-            <a href="#products" className="nav-link">Products</a>
-            <a href="#crops" className="nav-link">Crops</a>
-            <a href="#quality" className="nav-link">Quality Control</a>
-            <a href="#contact" className="nav-link">Contact Us</a>
+            <NavLink to="/" className="nav-link" activeClassName="active" exact>Home</NavLink>
+            <NavLink to="/products" className="nav-link" activeClassName="active">Products</NavLink>
+            <NavLink to="/crops" className="nav-link" activeClassName="active">Crops</NavLink>
+            <NavLink to="/quality-control" className="nav-link" activeClassName="active">Quality Control</NavLink>
+            <a href="/#contact" className="nav-link">Contact Us</a>
           </nav>
           <button className="store-button desktop">Online Store</button>
         </div>
@@ -27,11 +28,11 @@ const Header = () => {
         {/* Mobile-only container */}
         <div className={`mobile-menu-container ${menuOpen ? 'active' : ''}`}>
           <nav className="nav-links">
-            <a href="#home" className="nav-link active">Home</a>
-            <a href="#products" className="nav-link">Products</a>
-            <a href="#crops" className="nav-link">Crops</a>
-            <a href="#quality" className="nav-link">Quality Control</a>
-            <a href="#contact" className="nav-link">Contact Us</a>
+            <NavLink to="/" className="nav-link" activeClassName="active" exact onClick={() => setMenuOpen(false)}>Home</NavLink>
+            <NavLink to="/products" className="nav-link" activeClassName="active" onClick={() => setMenuOpen(false)}>Products</NavLink>
+            <NavLink to="/crops" className="nav-link" activeClassName="active" onClick={() => setMenuOpen(false)}>Crops</NavLink>
+            <NavLink to="/quality-control" className="nav-link" activeClassName="active" onClick={() => setMenuOpen(false)}>Quality Control</NavLink>
+            <a href="/#contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact Us</a>
           </nav>
           <button className="store-button mobile">Online Store</button>
         </div>

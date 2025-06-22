@@ -1,0 +1,110 @@
+.crop-hero-section {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: white;
+}
+
+.crop-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.crop-hero-overlay h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.crop-hero-overlay p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.crop-list-section {
+    padding: 80px 20px;
+    background-color: #ccd5bb;
+}
+
+.crop-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.crop-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.crop-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.crop-text {
+    flex: 1.5;
+}
+
+.crop-text h2 {
+    font-size: 32px;
+    color: #006837;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.crop-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.crop-image {
+    flex: 1;
+    border: 5px solid #006837;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.crop-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.crop-hero-overlay-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding-left: 15vw;
+    color: #222;
+    text-align: left;
+}
+
+.page-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #24713b;
+    margin-bottom: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-breadcrumb {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+} 

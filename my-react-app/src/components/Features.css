@@ -24,10 +24,15 @@
 .summary-box {
   background-color: #d98d3d;
   color: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 15px;
   width: 200px;
   text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.summary-box:hover {
+  box-shadow: 0 0 10px #EB802E;
 }
 
 .summary-box .summary-icon {
@@ -65,8 +70,12 @@
   padding: 80px 20px;
 }
 
+.feature-section {
+  background-color: #A3B18A;
+}
+
 .feature-section-alt {
-  background-color: #f0f0f0;
+  background-color: #F9F9F9;
 }
 
 .feature-content {
@@ -81,18 +90,36 @@
   flex-direction: row-reverse;
 }
 
+/* Shared image container */
 .feature-image {
-  flex: 0.8;
+  flex: 0.35; /* Slightly increased from 0.3 */
+  max-width: 400px; /* Slightly larger max width */
 }
 
-.feature-image img {
-  width: 100%;
-  border-radius: 20px;
+/* Green Image */
+.feature-image-green img {
+  width: 80%;             /* Increased from 70% */
+  max-width: 400px;       /* Slightly larger */
+  margin: 0 auto;
   display: block;
+  border-radius: 20px;
+  border: 4px solid #006636;
 }
+
+/* Orange Image */
+.feature-image-orange img {
+  width: 80%;             /* Increased from 70% */
+  max-width: 400px;       /* Slightly larger */
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+  border: 4px solid #EB802E;
+}
+
+
 
 .feature-text {
-  flex: 1.2;
+  flex: 1;
 }
 
 .feature-text h2 {
@@ -117,8 +144,8 @@
 }
 
 .feature-text p {
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 18px;
+  line-height: 1.8;
   color: #555;
   margin-bottom: 30px;
 }
@@ -131,21 +158,23 @@
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .feature-button-orange {
   background-color: #d98d3d;
 }
 .feature-button-orange:hover {
-  background-color: #c57a2e;
+  color: #16a34a;
+  box-shadow: 0 0 10px #EB802E;
 }
 
 .feature-button-green {
     background-color: #006837;
 }
 .feature-button-green:hover {
-    background-color: #00522c;
+    color: #EB802E;
+    box-shadow: 0 0 10px #16a34a;
 }
 
 /* Responsive Design */
@@ -171,7 +200,7 @@
 /* Mission Section */
 .mission-section {
   position: relative;
-  padding: 220px 20px;
+  padding: 300px 20px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Parallax effect */
@@ -223,7 +252,7 @@
 
 .products-title {
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
   color: #006837;
   margin-bottom: 50px;
   font-weight: 700;
@@ -249,20 +278,20 @@
 }
 
 .product-card.large-card .product-image-container img {
-  max-height: 400px;
+  max-height: 650px;
 }
 
 .product-image-container {
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
-  border: 4px solid #333;
+  border: 4px solid #006636;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover .product-image-container {
     transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 25px #006636;
 }
 
 .product-image-container img {
@@ -272,7 +301,7 @@
 }
 
 .product-label {
-  background-color: #006837;
+  background-color: #006636;
   color: white;
   padding: 12px 25px;
   font-size: 18px;
@@ -280,13 +309,17 @@
   border-radius: 10px;
   display: inline-block;
 }
+.product-label:hover{
+  color: #EB802E;
+  box-shadow: 0 0 10px #16a34a;
+}
 
 /* Background colors for product images */
-.pink-bg { background: linear-gradient(135deg, #e53988, #d42c7a); }
-.red-bg { background: linear-gradient(135deg, #d32f2f, #b71c1c); }
-.dark-blue-bg { background: linear-gradient(135deg, #303f9f, #1a237e); }
-.purple-bg { background: linear-gradient(135deg, #8e24aa, #6a1b9a); }
-.light-blue-bg { background: linear-gradient(135deg, #0288d1, #01579b); }
+.pink-bg { background: linear-gradient(135deg, #04667E, #CA247F); }
+.red-bg { background: linear-gradient(135deg, #F8C0D8, #ED3237); }
+.dark-blue-bg { background: linear-gradient(135deg, #EF2E93, #2E3C97); }
+.purple-bg { background: linear-gradient(135deg, #45B653, #ED3237); }
+.light-blue-bg { background: linear-gradient(135deg, #9D8C6D, #34367E); }
 
 
 @media (max-width: 992px) {

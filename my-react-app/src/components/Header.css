@@ -69,7 +69,7 @@
 }
 
 .store-button.desktop:hover {
-  background-color: #00522c;
+  background-color: #d98d3d;
   transform: translateY(-2px);
 }
 
@@ -164,16 +164,22 @@
       font-size: 28px;
   }
 
-  /* Mobile store button */
-  .mobile-menu-container .store-button.mobile {
-    display: block;
-    background-color: #006837;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 30px;
-    cursor: pointer;
-  }
+/* Mobile store button */
+.mobile-menu-container .store-button.mobile {
+  display: block;
+  background-color: #006837;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* optional smooth hover */
+}
+
+.mobile-menu-container .store-button.mobile:hover {
+  background-color: #d98d3d;
+}
+
 } 
