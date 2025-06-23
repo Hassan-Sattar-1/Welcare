@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../assets/logo.png';
 
@@ -10,23 +11,23 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Crops</a></li>
-              <li><a href="#">Quality Control</a></li>
+              <li><Link to="/products">Products</Link></li>
+              <li><Link to="/crops">Crops</Link></li>
+              <li><Link to="/quality-control">Quality Control</Link></li>
             </ul>
           </div>
           <div className="footer-column">
             <h4>Other Pages</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Management</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><Link to="/about-us">About Us</Link></li>
+              <li><Link to="/contact-us">Contact Us</Link></li>
+              <li><Link to="/coming-soon">Online Store</Link></li>
             </ul>
           </div>
           <div className="footer-column">
             <h4>Contact Info</h4>
             <address>
-              68-A, Officers Colony, Farid Town, Sahiwal<br />
+              66-A, Officers Colony, Farid Town, Sahiwal<br />
               +92 320-0676404<br />
               welcarewcc@yahoo.com
             </address>
