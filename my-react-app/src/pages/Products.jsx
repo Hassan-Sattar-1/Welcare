@@ -25,7 +25,7 @@ const Products = () => {
           <div className="product-card-wrapper">
             <Link to="/micro-nutrients">
               <div className="product-card large-card">
-                <div className="product-image-container pink-bg">
+                <div className="product-image-container">
                   <img src={microNutrientsPic} alt="Micro Nutrients" />
                 </div>
                 <div className="product-label">Micro Nutrients</div>
@@ -37,7 +37,7 @@ const Products = () => {
             <div className="product-card-wrapper">
               <Link to="/granules">
                 <div className="product-card">
-                  <div className="product-image-container red-bg">
+                  <div className="product-image-container">
                     <img src={granulesPic} alt="Granules" />
                   </div>
                   <div className="product-label">Granules</div>
@@ -47,7 +47,7 @@ const Products = () => {
             <div className="product-card-wrapper">
               <Link to="/fungicides">
                 <div className="product-card">
-                  <div className="product-image-container dark-blue-bg">
+                  <div className="product-image-container">
                     <img src={fungicidesPic} alt="Fungicides" />
                   </div>
                   <div className="product-label">Fungicides</div>
@@ -57,7 +57,7 @@ const Products = () => {
             <div className="product-card-wrapper">
               <Link to="/insecticides">
                 <div className="product-card">
-                  <div className="product-image-container purple-bg">
+                  <div className="product-image-container">
                     <img src={insecticidesPic} alt="Insecticides" />
                   </div>
                   <div className="product-label">Insecticides</div>
@@ -67,7 +67,7 @@ const Products = () => {
             <div className="product-card-wrapper">
               <Link to="/herbicides">
                 <div className="product-card">
-                  <div className="product-image-container light-blue-bg">
+                  <div className="product-image-container">
                     <img src={herbicidesPic} alt="Herbicides" />
                   </div>
                   <div className="product-label">Herbicides</div>

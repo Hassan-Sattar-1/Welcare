@@ -1,7 +1,6 @@
 import React from 'react';
 import './MicroNutrients.css';
 import bgImg from '../assets/background1.jpeg';
-import cartap from '../assets/cartap.png';
 import ceedo from '../assets/ceedo.png';
 import fipronil from '../assets/fipronil.png';
 import lufenuron from '../assets/lufenuron.png';
@@ -12,7 +11,6 @@ import schenchlor from '../assets/schenchlor.png';
 import supervisor from '../assets/supervisor.png';
 
 const products = [
-  { name: 'Cartap', img: cartap },
   { name: 'Ceedo', img: ceedo },
   { name: 'Fipronil', img: fipronil },
   { name: 'Lufenuron', img: lufenuron },

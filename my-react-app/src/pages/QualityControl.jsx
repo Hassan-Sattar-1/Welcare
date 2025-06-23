@@ -1,6 +1,6 @@
 import React from 'react';
 import './QualityControl.css';
-import bgImg from '../assets/sugarcane.jpg';
+import bgImg from '../assets/background3.jpg';
 import controlImg from '../assets/control.jpeg';
 
 const points = [

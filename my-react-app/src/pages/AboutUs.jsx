@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutUs.css';
-import bgImg from '../assets/sugarcane.jpg';
-import aboutImg from '../assets/wheat.jpg';
+import bgImg from '../assets/background4.jpg';
+import aboutImg from '../assets/pic5.jpg';
 
 const aboutText = `Welcome to Welcare Chemical Corporation, a trusted partner in agricultural innovation. We are committed to empowering farmers with the tools, knowledge, and support they need to grow healthy, high-yielding, and sustainable crops.
 

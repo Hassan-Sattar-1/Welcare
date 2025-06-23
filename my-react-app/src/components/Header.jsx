@@ -22,10 +22,9 @@ const Header = () => {
             <NavLink to="/products" className={getNavLinkClass}>Products</NavLink>
             <NavLink to="/crops" className={getNavLinkClass}>Crops</NavLink>
             <NavLink to="/quality-control" className={getNavLinkClass}>Quality Control</NavLink>
-            <NavLink to="/about-us" className={getNavLinkClass}>About Us</NavLink>
             <NavLink to="/contact-us" className={getNavLinkClass}>Contact Us</NavLink>
           </nav>
-          <button className="store-button desktop">Online Store</button>
+          <Link to="/coming-soon" className="store-button desktop">Online Store</Link>
         </div>
 
         {/* Mobile-only container */}
@@ -38,7 +37,7 @@ const Header = () => {
             <NavLink to="/about-us" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>About Us</NavLink>
             <NavLink to="/contact-us" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>Contact Us</NavLink>
           </nav>
-          <button className="store-button mobile">Online Store</button>
+          <Link to="/coming-soon" className="store-button mobile">Online Store</Link>
         </div>
 
         <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>

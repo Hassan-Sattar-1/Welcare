@@ -7,7 +7,7 @@ import strengthPic from '../assets/pic1.jpg';
 import assetsPic from '../assets/pic2.jpg';
 import expertisePic from '../assets/pic3.jpg';
 import commitmentPic from '../assets/pic4.jpg';
-import missionBg from '../assets/background.jpeg';
+import missionBg from '../assets/background.jpg';
 import microNutrientsPic from '../assets/micronutrients.png';
 import granulesPic from '../assets/granules.png';
 import insecticidesPic from '../assets/insecticides.png';

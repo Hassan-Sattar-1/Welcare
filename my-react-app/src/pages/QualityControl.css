@@ -1,7 +1,7 @@
 .quality-hero-section {
   min-height: 520px;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-attachment: fixed;
   display: flex;
   align-items: center;

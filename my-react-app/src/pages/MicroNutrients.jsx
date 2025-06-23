@@ -1,7 +1,6 @@
 import React from 'react';
 import './MicroNutrients.css';
 import bgImg from '../assets/background1.jpeg';
-import ammoniumSulphate from '../assets/ammonium_sulphate.png';
 import banjara from '../assets/banjara.png';
 import careFlow from '../assets/care_flow.png';
 import careMax from '../assets/care_max.png';
@@ -16,7 +15,6 @@ const products = [
   { name: 'Care Push', img: carePush },
   { name: 'Banjara', img: banjara },
   { name: 'Care Up', img: careUp },
-  { name: 'Ammonium\nSulphate', img: ammoniumSulphate },
   { name: 'Care Flow', img: careFlow },
   { name: 'Welkos SOP', img: sop },
   { name: 'Nooran', img: noran },
