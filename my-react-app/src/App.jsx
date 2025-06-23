@@ -14,6 +14,7 @@ import Insecticides from './pages/Insecticides';
 import Herbicides from './pages/Herbicides';
 import Fungicides from './pages/Fungicides';
 import ComingSoon from './pages/ComingSoon';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/herbicides" element={<Herbicides />} />
         <Route path="/fungicides" element={<Fungicides />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
     </Router>
