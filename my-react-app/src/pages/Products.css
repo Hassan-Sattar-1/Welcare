@@ -188,7 +188,10 @@
 }
 
 @media (max-width: 768px) {
-    .products-subgrid {
+    .products-grid {
         grid-template-columns: 1fr;
+    }
+    .product-hero-section {
+        background-attachment: scroll;
     }
 } 

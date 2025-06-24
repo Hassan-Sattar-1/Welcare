@@ -107,4 +107,14 @@
     color: #222;
     margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .crop-hero-section {
+        background-attachment: scroll;
+    }
+    .crop-item,
+    .crop-item:nth-child(even) {
+        flex-direction: column;
+    }
 } 

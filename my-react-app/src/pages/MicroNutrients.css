@@ -123,8 +123,21 @@
 @media (max-width: 600px) {
   .micronutrients-products-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
   .micronutrients-hero-overlay-left {
     padding-left: 5vw;
+  }
+  .micronutrients-product-card {
+    min-width: 280px;
+    min-height: 320px;
+  }
+  .micronutrients-product-image {
+    width: 180px;
+    height: 200px;
+  }
+  .micronutrients-product-image img {
+    max-width: 150px;
+    max-height: 180px;
   }
 } 

@@ -34,10 +34,9 @@ const Header = () => {
             <NavLink to="/products" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>Products</NavLink>
             <NavLink to="/crops" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>Crops</NavLink>
             <NavLink to="/quality-control" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>Quality Control</NavLink>
-            <NavLink to="/about-us" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>About Us</NavLink>
             <NavLink to="/contact-us" className={getNavLinkClass} onClick={() => setMenuOpen(false)}>Contact Us</NavLink>
           </nav>
-          <Link to="/coming-soon" className="store-button mobile">Online Store</Link>
+          <Link to="/coming-soon" className="store-button mobile" onClick={() => setMenuOpen(false)}>Online Store</Link>
         </div>
 
         <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>

@@ -1,12 +1,25 @@
 .quality-hero-section {
   min-height: 520px;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 0 40px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.quality-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* 70% transparent overlay */
+  z-index: -1;
 }
 
 .quality-content-wrapper {
@@ -91,6 +104,9 @@
 }
 
 @media (max-width: 900px) {
+  .quality-hero-section {
+    background-attachment: scroll;
+  }
   .quality-content-wrapper {
     flex-direction: column;
     align-items: center;
@@ -99,6 +115,7 @@
   .quality-content-right, .quality-content-left {
     width: 100%;
     justify-content: center;
+    text-align: center;
   }
   .quality-image-frame {
     width: 90vw;

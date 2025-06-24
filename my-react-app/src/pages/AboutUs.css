@@ -150,6 +150,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    text-align: center;
   }
   .aboutus-content-right, .aboutus-content-left {
     width: 100%;
@@ -163,5 +164,6 @@
   .aboutus-mission-vision-wrapper {
     flex-direction: column;
     gap: 30px;
+    text-align: center;
   }
 } 
