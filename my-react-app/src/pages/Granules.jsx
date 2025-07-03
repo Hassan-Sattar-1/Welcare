@@ -1,12 +1,19 @@
 import React from 'react';
 import './MicroNutrients.css';
 import bgImg from '../assets/background1.jpeg';
-import monomehypo from '../assets/monomehypo.png';
+import hyporan from '../assets/hyporan.png';
 import cartap from '../assets/cartap.png';
+import bestoss from '../assets/bestoss.png';
+import weljin from '../assets/weljin.png';
+import wesonil from '../assets/wesonil.png';
+
 
 const products = [
-  { name: 'Monomehypo', img: monomehypo },
-  { name: 'Cartap', img: cartap }
+  { name: 'Hyporan', img: hyporan },
+  { name: 'Cartap', img: cartap },
+  { name: 'Bestoss', img: bestoss },
+  { name: 'Weljin', img: weljin },
+  { name: 'Wesonil', img: wesonil },
 ];
 
 const Granules = () => (

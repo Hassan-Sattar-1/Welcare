@@ -2,13 +2,29 @@ import React from 'react';
 import './MicroNutrients.css';
 import bgImg from '../assets/background1.jpeg';
 import glyphosate from '../assets/glyphosate.png';
-import blue_bell from '../assets/blue_bell.png';
 import washer from '../assets/washer.png';
+import bermuda from '../assets/bermuda.png';
+import full_control from '../assets/full_control.png';
+import gangwei from '../assets/gangwei.png';
+import miaoyou from '../assets/miaoyou.png';
+import recall from '../assets/recall.png';
+import sanga from '../assets/sanga.png';
+import walter_super from '../assets/walter_super.png';
+import welosate from '../assets/welosate.png';
+import winsta from '../assets/winsta.png';
 
 const products = [
   { name: 'Glyphosate', img: glyphosate },
-  { name: 'Blue Bell', img: blue_bell },
   { name: 'Washer', img: washer },
+  { name: 'Bermuda', img: bermuda },
+  { name: 'Full Control', img: full_control },
+  { name: 'Gangwei', img: gangwei },
+  { name: 'Miaoyou', img: miaoyou },
+  { name: 'Recall', img: recall },
+  { name: 'Sanga', img: sanga },
+  { name: 'Welosate', img: welosate },
+  { name: 'Walter Super', img: walter_super },
+  { name: 'Winsta', img: winsta },
 ];
 
 const Herbicides = () => (

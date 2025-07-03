@@ -7,9 +7,10 @@ import careMax from '../assets/care_max.png';
 import carePush from '../assets/care_push.png';
 import careUp from '../assets/care_up.png';
 import noran from '../assets/noran.png';
-import richer from '../assets/richer.png';
 import sop from '../assets/sop.png';
 import wellzar from '../assets/wellzar.png';
+import roisor from '../assets/roisor.png';
+
 
 const products = [
   { name: 'Care Push', img: carePush },
@@ -20,7 +21,7 @@ const products = [
   { name: 'Nooran', img: noran },
   { name: 'Welzar', img: wellzar },
   { name: 'Care Max', img: careMax },
-  { name: 'Richer', img: richer },
+  { name: 'Roisor', img: roisor },
 ];
 
 console.log(products);

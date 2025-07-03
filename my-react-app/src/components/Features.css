@@ -247,7 +247,7 @@
 /* Products Section */
 .products-section {
   padding: 80px 20px;
-  background-color: #f0f0f0;
+  background-color: #ccd5bb;
 }
 
 .products-title {
@@ -264,72 +264,136 @@
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: center;
+  align-items: stretch;
+}
+
+.product-card-wrapper {
+  height: 100%;
+}
+
+.product-card.large-card {
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .products-subgrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 30px;
+  height: 100%;
+}
+
+.products-subgrid .product-card-wrapper {
+  height: 100%;
+}
+
+.products-subgrid .product-card {
+  height: 100%;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .product-card {
   text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0, 102, 54, 0.18), 0 0 24px 0 #16a34a33;
+  transition: box-shadow 0.3s, transform 0.3s;
+  border: 1px solid #f0f0f0;
+  padding-bottom: 18px;
+}
+
+.product-card.large-card .product-image-container {
+  flex: 1 1 auto;
+  height: 100%;
+  padding: 20px;
+  margin-bottom: 0;
+  border-radius: 8px;
+  border: none;
+  box-shadow: #16a34a33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
 }
 
 .product-card.large-card .product-image-container img {
-  max-height: 650px;
+  width: 100%;
+  height: 100%;
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+  border-radius: 18px 18px 0 0;
 }
 
 .product-image-container {
-  padding: 20px;
-  border-radius: 20px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 18px;
   margin-bottom: 20px;
-  border: 4px solid #006636;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.product-card:hover .product-image-container {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 25px #006636;
+.product-card:hover, .product-card.large-card:hover {
+  box-shadow: 0 8px 32px rgba(0,102,54,0.25), 0 0 32px 4px #16a34a66;
+  transform: translateY(-8px) scale(1.03);
+  z-index: 2;
 }
 
 .product-image-container img {
-  width: 100%;
-  max-height: 250px;
+  width: 120px;
+  max-height: 180px;
   object-fit: contain;
 }
 
 .product-label {
-  background-color: #006636;
-  color: white;
-  padding: 12px 25px;
+  background: transparent;
+  color: #24713b;
+  border: 1.5px solid #24713b;
+  padding: 10px 24px;
   font-size: 18px;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 8px;
   display: inline-block;
-}
-.product-label:hover{
-  color: #EB802E;
-  box-shadow: 0 0 10px #16a34a;
+  margin-top: 8px;
+  transition: background 0.2s, color 0.2s;
 }
 
-/* Background colors for product images */
-.pink-bg { background: linear-gradient(135deg, #04667E, #CA247F); }
-.red-bg { background: linear-gradient(135deg, #F8C0D8, #ED3237); }
-.dark-blue-bg { background: linear-gradient(135deg, #EF2E93, #2E3C97); }
-.purple-bg { background: linear-gradient(135deg, #45B653, #ED3237); }
-.light-blue-bg { background: linear-gradient(135deg, #9D8C6D, #34367E); }
+.product-label:hover {
+  background: #24713b;
+  color: #fff;
+  box-shadow: 0 0 10px #16a34a33;
+}
 
+.pink-bg, .red-bg, .dark-blue-bg, .purple-bg, .light-blue-bg { background: none !important; }
 
 @media (max-width: 992px) {
-    .products-grid {
-        grid-template-columns: 1fr;
-    }
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
-    .products-subgrid {
-        grid-template-columns: 1fr;
-    }
+  .products-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .products-subgrid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .product-card, .product-card.large-card {
+    margin: 0 auto;
+  }
 } 

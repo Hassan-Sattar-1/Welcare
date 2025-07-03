@@ -52,7 +52,9 @@ const Features = () => {
             <h2 className="feature-title-green">Our Strength</h2>
             <h3>Comprehensive Agrochemical Solutions for Every Crop</h3>
             <p>At Welcare Chemical Corporation, we offer a diverse and trusted range of agrochemical solutions tailored to the needs of Pakistani farmers. Our research-based products protect crops at every stage—from weeds and pests to environmental stress—ensuring healthy growth and better yields. With one of the widest product portfolios in the industry, we're committed to advancing sustainable agriculture and securing safe, affordable food for all.</p>
-            <button className="feature-button-orange">Know More</button>
+            <Link to="/crops">
+              <button className="feature-button-orange">Know More</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -67,7 +69,9 @@ const Features = () => {
             <h2 className="feature-title-orange">Our Assets</h2>
             <h3>Trusted Brands, Proven Performance</h3>
             <p>At Welcare Chemical Corporation, our product range includes proven agrochemicals and micronutrients trusted by farmers across Pakistan. Backed by years of field success, our brands deliver reliable protection and healthier plants. Through ongoing research and innovation, we continue to expand our portfolio—offering smarter, more effective solutions to meet modern agricultural needs.</p>
-            <button className="feature-button-green">Our Products</button>
+            <Link to="/products">
+              <button className="feature-button-green">Our Products</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -82,7 +86,9 @@ const Features = () => {
             <h2 className="feature-title-green">Our Expertise</h2>
             <h3>Excellence in Manufacturing & Formulations</h3>
             <p>At Welcare Chemical Corporation, we specialize in the formulation and manufacturing of high-quality agrochemicals including pesticides, herbicides, insecticides, and fungicides. Our products are developed under expert supervision using advanced techniques like EC, SC, WP, WG, and OD formulations, ensuring consistent performance and reliability for farmers across Pakistan.</p>
-            <button className="feature-button-orange">Know More</button>
+            <Link to="/quality-control">
+              <button className="feature-button-orange">Know More</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -97,7 +103,9 @@ const Features = () => {
             <h2 className="feature-title-orange">Our Commitment</h2>
             <h3>Strict Quality Control Standards</h3>
             <p>At Welcare, we maintain rigorous quality assurance practices to ensure product consistency and customer satisfaction. Our processes are aligned with ISO standards, and we continuously monitor performance, feedback, and production to drive ongoing improvement across all operations.</p>
-            <button className="feature-button-green">Contact Us</button>
+            <Link to="/contact-us">
+              <button className="feature-button-green">Contact Us</button>
+            </Link>
           </div>
         </div>
       </section>

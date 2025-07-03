@@ -5,12 +5,24 @@ import kachalo from '../assets/kachalo.png';
 import pucheng_star from '../assets/pucheng_star.png';
 import pyrazole from '../assets/pyrazole.png';
 import sulphur from '../assets/sulphur.png';
+import chisel from '../assets/chisel.png';
+import metamanco from '../assets/metamanco.png';
+import oxyrich from '../assets/oxyrich.png';
+import pivot from '../assets/pivot.png';
+import success from '../assets/success.png';
+import thiophanate from '../assets/thiophanate.png';
 
 const products = [
   { name: 'Kachalo', img: kachalo },
   { name: 'Pucheng Star', img: pucheng_star },
   { name: 'Pyrazole', img: pyrazole },
   { name: 'Sulphur', img: sulphur },
+  { name: 'Chisel', img: chisel },
+  { name: 'Meta + Manco', img: metamanco },
+  { name: 'Oxyrich', img: oxyrich },
+  { name: 'Pivot', img: pivot },
+  { name: 'Success', img: success },
+  { name: 'Thiophanate', img: thiophanate },
 ];
 
 const Fungicides = () => (
